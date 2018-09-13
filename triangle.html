@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckTriangle</title>
+
+    <script>
+        function checkRectangle() {
+            console.log("checking");
+            let side1 = Number(document.getElementById("side1").value);
+            let side2 = Number(document.getElementById("side2").value);
+            let side3 = Number(document.getElementById("side3").value);
+
+            if (side1, side2, side3 > 0) {
+
+            }
+
+                if (side1 + side2 > side3) {
+                    if (side2 + side3 > side1) {
+                        if (side1 + side3 > side2) {
+                            alert('day la tam giac')}
+                        else
+                            alert('day khong la tam giac');
+                    }
+                    else
+                        alert('day khong la tam giac')
+                }
+                else
+                    alert('day khong la tam giac')
+        }
+
+    </script>
+</head>
+<body>
+<label for="side1">Value 1:</label>
+<input type="text" id="side1">
+<label for="side2">Value 2:</label>
+<input type="text" id="side2">
+<label for="side3">Value 3:</label>
+<input type="text" id="side3">
+<input type="button" onclick="checkRectangle()" value="Check Rectangle">
+</body>
+</html>
